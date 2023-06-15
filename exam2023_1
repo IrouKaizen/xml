@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT livreCompte (mois, solde-initial, depot*)>
+<!ELEMENT mois (#PCDATA)>
+<!ELEMENT solde-initial (#PCDATA)>
+<!ELEMENT depot (destinataire, montant, date, description)>
+<!ELEMENT destinataire (#PCDATA)>
+<!ELEMENT montant (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ATTLIST depot type CDATA #REQUIRED>
+<!ATTLIST depot numero CDATA #IMPLIED>
+<!ATTLIST description categorie CDATA #IMPLIED>
